@@ -20,3 +20,5 @@ Route::get('auth/activate/resend', 'Auth\ActivationResendController@showResendFo
 
 Route::post('auth/activate/resend', 'Auth\ActivationResendController@resend');
 
+// Route::get('/changePassword','ProfileController@showChangePasswordForm');
+

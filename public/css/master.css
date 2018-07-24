@@ -9,7 +9,8 @@ body {
     padding: 0;
 }
 #app{
-    background-color: #67e6dc;
+    /*background-color: #67e6dc;*/
+    background-color: #f7f7f7;
 }
 .has-fc-offcanvas {
     -webkit-transition: transform 0.3s ease;
@@ -27,6 +28,9 @@ p {
     margin: 0 0 10px;
     display: block;
     font-size: 14px;
+}
+.navbar{
+    margin-bottom:0;
 }
 .fa {
     display: inline-block;
@@ -191,4 +195,34 @@ p {
 }
 .btn-custom{
     margin-bottom: 30px;
+}
+.profile-header{
+    background-color: #02b3e4;
+    padding: 70px 15px 70px 15px;
+}
+.profile_body_content{
+    padding: 25px;
+}
+.tab_profile{
+    margin-top: 30px;
+}
+.nav_border{
+    border: 1px solid #007bff;
+}
+.menu_profile{
+    background-color: #fff; 
+    padding: 40px; 
+    margin-right: 45px;     
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}
+.account_page{
+    background-color: #fff; 
+    padding: 40px;
+    border-left: 4px solid #4c7ef3;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}
+.nav_custom{
+    padding: 10px 15px 10px 15px;
 }
