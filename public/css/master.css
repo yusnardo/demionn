@@ -58,6 +58,7 @@ p {
 .bg-red{
  	background-color: #a29bfe;	
  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
 }
 .logo{
 	font-weight: bold;
@@ -225,4 +226,7 @@ p {
 }
 .nav_custom{
     padding: 10px 15px 10px 15px;
+}
+.va-detail{
+    text-align: center;
 }

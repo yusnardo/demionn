@@ -26,5 +26,11 @@ Route::patch('profile/update-password', 'ProfileController@updatePassword');
 
 Route::get('/card', 'CardController@index');
 
+Route::get('/checkout', 'CheckoutController@index');
+
+Route::get('/card-1', function () {
+    return view('cards.card-1');
+});
+
 
 

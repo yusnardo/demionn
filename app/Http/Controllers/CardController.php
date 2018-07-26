@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 class CardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
-        return view('card');
+        return view('cards.card');
     }
 }

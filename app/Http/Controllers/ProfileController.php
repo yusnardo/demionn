@@ -15,21 +15,21 @@ class ProfileController extends Controller
         $this->middleware('auth');
     }
 
-    public function admin_credential_rules(array $data)
-    {
-        $messages = [
-            'password.required' => 'Please enter current password',
-            'new_password.required' => 'Please enter password',
-        ];
+    // public function admin_credential_rules(array $data)
+    // {
+    //     $messages = [
+    //         'password.required' => 'Please enter current password',
+    //         'new_password.required' => 'Please enter password',
+    //     ];
 
-        $validator = Validator::make($data, [
-            'password' => 'required',
-            'new_password' => 'required|same:new_password',
-            'confirm_password' => 'required|same:new_password',     
-        ], $messages);
+    //     $validator = Validator::make($data, [
+    //         'password' => 'required',
+    //         'new_password' => 'required|same:new_password',
+    //         'confirm_password' => 'required|same:new_password',     
+    //     ], $messages);
 
-        return $validator;
-    }  
+    //     return $validator;
+    // }  
     
     public function index(User $user_id)
     {
