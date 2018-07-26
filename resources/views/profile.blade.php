@@ -23,9 +23,12 @@
 					<a class="nav-link nav_custom active" id="v-pills-bi-tab" data-toggle="pill" href="#v-pills-bi" role="tab" aria-controls="v-pills-home" aria-selected="true">
 						Basic Information
 					</a>
-					<a class="nav-link nav_custom" id="v-pills-cp-tab" data-toggle="pill" href="#v-pills-cp" role="tab" aria-controls="v-pills-cp" aria-selected="false">
+					<span onClick ="alert('You must email admin to change password right now!')">
+						<a class="nav-link nav_custom disabled" id="v-pills-cp-tab" data-toggle="pill" href="#v-pills-cp" role="tab" aria-controls="v-pills-cp" aria-selected="false" style="cursor: not-allowed;">
 						Change Password
-					</a>
+						</a>
+					</span>
+					
 					<a class="nav-link nav_custom disabled" id="v-pills-mail-tab" data-toggle="pill" href="#v-pills-mail" role="tab" aria-controls="v-pills-mail" aria-selected="false" style="cursor: not-allowed;">
 						Mail Settings
 					</a>
@@ -35,48 +38,57 @@
 			<div class="col-lg-8 col-md-8 account_page">
 				<div class="tab-content" id="v-pills-tabContent">
 					<div class="tab-pane show active" id="v-pills-bi" role="tabpanel" aria-labelledby="v-pills-bi-tab">
-						<form>
+						<form action="{{ url('profile/update-information') }}" method="post">
+							{{ csrf_field() }}
+    						{{ method_field('patch') }}
 							 <div class="form-group">
 								<label for="formGroupExampleInput">Name</label>
-								<input type="text" class="form-control" placeholder="Name">
+								<input type="text" name="name" class="form-control" value="{{ Auth::user()->name }}">
 							</div>
 							<div class="form-group">
 								<label for="formGroupExampleInput">Email</label>
-								<input type="text" placeholder="{{ Auth::user()->email }}" class="form-control" disabled>
+								<input type="text" name="email" value="{{ Auth::user()->email }}" class="form-control" disabled>
 							</div>
 							<div class="form-group">
 								<label for="formGroupExampleInput">Nickname</label>
-								<input type="text" class="form-control" placeholder="Nickname">
+								<input type="text" name="nickname" class="form-control" value="{{ Auth::user()->nickname }}">
 							</div>
 							<div class="form-group">
 								<label for="formGroupExampleInput">About me</label>
-								<textarea type="text" class="form-control" placeholder="About me"></textarea>
+								<textarea type="text" name="aboutme" class="form-control">{{ Auth::user()->aboutme }}</textarea>
 							</div>
 							<div class="form-group">
 								<label for="formGroupExampleInput">GitHub</label>
-								<input type="text" class="form-control" placeholder="GitHub">
+								<input type="text" name="github" class="form-control" value="{{ Auth::user()->github }}">
 							</div>
 							<div class="form-group">
 								<label for="formGroupExampleInput">Linkedln</label>
-								<input type="text" class="form-control" placeholder="Linkedln">
+								<input type="text" name="linkedin" class="form-control" value="{{ Auth::user()->linkedin }}">
 							</div>
-							<button type="submit" class="btn btn-primary mb-2">Submit</button>
+							{{-- <div class="form-group">
+								<img src="/uploads/avatars//{ $user->avatar }}" style="width: 150px; height: 150px; float: left; border-radius: 50%; ">
+							</div> --}}
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary mb-2">Save</button>
+							</div>
 						</form>
 					</div>
 					<div class="tab-pane" id="v-pills-cp" role="tabpanel" aria-labelledby="v-pills-cp-tab">
-						<div class="form-group">
-							<label for="formGroupExampleInput">Current Password</label>
-							<input type="text" class="form-control" placeholder="Current Password">
-						</div>
-						<div class="form-group">
-							<label for="formGroupExampleInput">New Password</label>
-							<input type="text" class="form-control" placeholder="New Password">
-						</div>
-						<div class="form-group">
-							<label for="formGroupExampleInput">Confirmation</label>
-							<input type="text" class="form-control" placeholder="Confirmation">
-						</div>
-						<button type="submit" class="btn btn-primary mb-2">Change Password</button>
+						<form action="{{ url('profile/update-password') }}" method="post">
+							<div class="form-group">
+								<label for="formGroupExampleInput">Current Password</label>
+								<input type="password" name="password" class="form-control" placeholder ="Current Password">
+							</div>
+							<div class="form-group">
+								<label for="formGroupExampleInput">New Password</label>
+								<input type="password" name="new_password" class="form-control" placeholder="New Password">
+							</div>
+							<div class="form-group">
+								<label for="formGroupExampleInput">Confirmation</label>
+								<input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password">
+							</div>
+							<button type="submit" class="btn btn-primary mb-2">Change Password</button>
+						</form>
 					</div>
 					<div class="tab-pane disabled" id="v-pills-mail" role="tabpanel" aria-labelledby="v-pills-mail-tab">
 						...

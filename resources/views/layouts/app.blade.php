@@ -53,7 +53,7 @@
                                   </a>
 
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="/profile">Profile</a>
+                                    <a class="dropdown-item" href="/profile/{user}">Profile</a>
                                     <a class="dropdown-item" href="/logout">Logout</a>
                                   </div>
                                 </div>

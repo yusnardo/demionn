@@ -17,12 +17,11 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('nickname');
+            $table->string('nickname')->nullable();
             $table->string('password');
-            $table->string('github');
-            $table->string('linkedin');
-            $table->string('nickname');
-            $table->string('aboutme');
+            $table->string('github')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('aboutme')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
