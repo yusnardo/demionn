@@ -15,6 +15,7 @@ class PaidMemberMiddleware
      */
     public function handle($request, Closure $next)
     {
+        $user_email = DB::table('course')-> where('user_email')-> first();
         return $next($request);
     }
 }

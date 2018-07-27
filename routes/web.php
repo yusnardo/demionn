@@ -28,6 +28,8 @@ Route::get('/card', 'CardController@index');
 
 Route::get('/checkout', 'CheckoutController@index');
 
+Route::patch('course/order', 'CourseController@payment');
+
 Route::get('/card-1', function () {
     return view('cards.card-1');
 });
