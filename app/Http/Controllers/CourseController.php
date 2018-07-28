@@ -12,17 +12,21 @@ class CourseController extends Controller
 {
     public function index()
     {
+    	$course = DB::select('select * from course');
     	if(Auth::Check()) {
-    		$user_payment = DB::select('select isPaid from orders where user_email = ?', [Auth::user()->email]);
-        	return view('course', compact('user_payment'));
+    		$user_payment = DB::table('orders')->where('user_email', Auth::user()->email)->value('isPaid');
+    		$course_title = DB::table('orders')->where('user_email', Auth::user()->email)->value('course_title');
+        	return view('course', compact('user_payment','course','course_title'));
     	}
     	else{
-    		return view('course');	
-    	}      
+    		return view('course', compact('course'));
+    	}
+    	    
     }
 
     public function payment(User $user_id, Request $request){
-		$user_id = DB::insert('insert into orders (user_email, sender_name, course_name, course_price) values (?, ?, ?, ?)', [Auth::user()->email, request('sender_name'), '1', request('nominal')]);
+		$user_id = DB::insert('insert into orders (user_email, sender_name, course_name, course_title, course_description, course_price, course_link) values (?, ?, ?, ?, ?, ?, ?)', [Auth::user()->email, request('sender_name'), request('course_name'), request('course_title'), request('course_description'), request('course_price'), request('course_link')]);
+		
 		return back()->withSuccess('Demion will verify your payment. If verify is done, you can read our module in Dasbor menu.');
 	}
 

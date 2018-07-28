@@ -58,7 +58,6 @@ p {
 .bg-red{
  	background-color: #a29bfe;	
  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 40px;
 }
 .logo{
 	font-weight: bold;
@@ -229,4 +228,11 @@ p {
 }
 .va-detail{
     text-align: center;
+}
+.dasbor-header{
+    background-color: #02b3e4;
+    padding: 70px 15px 70px 15px;
+}
+.dasbor-body{
+    padding: 25px;
 }

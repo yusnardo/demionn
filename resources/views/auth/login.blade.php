@@ -2,7 +2,7 @@
 @section('title', 'Login')
 
 @section('content')
-<div class="container">
+<div class="container" style="margin-top: 25px;">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h1 style="margin-bottom: 30px;">Login to Demion</h1>

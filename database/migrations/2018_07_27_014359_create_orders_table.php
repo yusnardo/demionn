@@ -18,8 +18,11 @@ class CreateOrdersTable extends Migration
             $table->string('user_email');
             $table->string('sender_name');
             $table->string('course_name');
+            $table->string('course_title');
+            $table->string('course_description');
             $table->integer('course_price');
-            $table->boolean('isPaid')->default(false);
+            $table->string('course_link');
+            $table->string('isPaid')->default('false');
             $table->timestamps();
         });
     }
