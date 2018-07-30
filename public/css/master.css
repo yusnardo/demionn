@@ -56,7 +56,7 @@ p {
     margin-right: 10px;
 }
 .bg-red{
- 	background-color: #a29bfe;	
+ 	background: linear-gradient(-135deg,#8649D6 0,#2791D2 100%);;	
  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo{
@@ -235,4 +235,32 @@ p {
 }
 .dasbor-body{
     padding: 25px;
+}
+.login_page{
+    background-color: #fff; 
+    padding: 50px 15px 30px 15px;
+    border-left: 4px solid #4c7ef3;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}
+.register_page{
+    background-color: #fff; 
+    padding: 50px 125px 20px 125px;
+    border-left: 4px solid #f4645f;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}
+.email_page{
+    background-color: #fff; 
+    padding: 50px 15px 30px 15px;
+    border-left: 4px solid #ff3d25;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}
+.reset_page{
+    background-color: #fff; 
+    padding: 50px 15px 30px 15px;
+    border-left: 4px solid #00bcd4;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
 }

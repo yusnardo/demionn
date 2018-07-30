@@ -9,7 +9,7 @@
 			<h1>{{ Auth::user()->name }}</h1>
 		</div>
 		<div class="col-lg-4 col-md-4">
-			<h3 class="push-left">4 Course</h3>
+			<h3 class="push-left">{{ count($dasbor) }} Course</h3>
 		</div>
 	</div>
 </div>
@@ -23,12 +23,9 @@
 					<a class="nav-link nav_custom active" id="v-pills-bi-tab" data-toggle="pill" href="#v-pills-bi" role="tab" aria-controls="v-pills-home" aria-selected="true">
 						Basic Information
 					</a>
-					<span onClick ="alert('You must email admin to change password right now!')">
-						<a class="nav-link nav_custom disabled" id="v-pills-cp-tab" data-toggle="pill" href="#v-pills-cp" role="tab" aria-controls="v-pills-cp" aria-selected="false" style="cursor: not-allowed;">
+					<a class="nav-link nav_custom" id="v-pills-cp-tab" data-toggle="pill" href="#v-pills-cp" role="tab" aria-controls="v-pills-cp" aria-selected="false">
 						Change Password
-						</a>
-					</span>
-					
+					</a>
 					<a class="nav-link nav_custom disabled" id="v-pills-mail-tab" data-toggle="pill" href="#v-pills-mail" role="tab" aria-controls="v-pills-mail" aria-selected="false" style="cursor: not-allowed;">
 						Mail Settings
 					</a>
@@ -75,17 +72,18 @@
 					</div>
 					<div class="tab-pane" id="v-pills-cp" role="tabpanel" aria-labelledby="v-pills-cp-tab">
 						<form action="{{ url('profile/update-password') }}" method="post">
+                            {{ csrf_field() }}
 							<div class="form-group">
 								<label for="formGroupExampleInput">Current Password</label>
-								<input type="password" name="password" class="form-control" placeholder ="Current Password">
+								<input type="password" name="current_password"  id="current_password" class="form-control" placeholder ="Current Password">
 							</div>
 							<div class="form-group">
 								<label for="formGroupExampleInput">New Password</label>
-								<input type="password" name="new_password" class="form-control" placeholder="New Password">
+								<input type="password" name="password" id="password" class="form-control" placeholder="New Password">
 							</div>
 							<div class="form-group">
 								<label for="formGroupExampleInput">Confirmation</label>
-								<input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password">
+								<input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm Password">
 							</div>
 							<button type="submit" class="btn btn-primary mb-2">Change Password</button>
 						</form>

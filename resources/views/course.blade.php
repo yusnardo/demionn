@@ -130,7 +130,7 @@
 					    	</div>
 					  	</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4" style="margin-top: 20px;">
 						<div class="card">
 							<img class="card-img-top" alt={{ $course->course_title }} src={{ $course->course_img_link }}>
 							<div class="card-body">

@@ -18,7 +18,7 @@
 		<div class="row">	
 			@foreach($dasbor as $dasbors)
 				@if($dasbors->isPaid == 'true')
-					<div class="col-lg-6">
+					<div class="col-lg-6" style="margin-top: 20px;">
 						<div class="card">
 						  	<div class="card-header">
 						    	<h3>{{ $dasbors->course_title }}</h3>

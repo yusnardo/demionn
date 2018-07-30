@@ -69,6 +69,9 @@
         <div class="body-content">
             <div class="container">
                 @include('layouts.partials._alert')
+                @if(Session::has('message'))
+                    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                @endif
             </div>
             @yield('content')
         </div>

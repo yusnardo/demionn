@@ -22,7 +22,7 @@ Route::get('profile/{user}', 'ProfileController@index');
 
 Route::patch('profile/update-information', 'ProfileController@updateProfile');
 
-Route::patch('profile/update-password', 'ProfileController@updatePassword');
+Route::post('profile/update-password', 'ProfileController@updatePassword');
 
 Route::get('/card', 'CardController@index');
 
