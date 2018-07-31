@@ -76,50 +76,77 @@
             @yield('content')
         </div>
 
-        <div class="fc-copyright">
+        <hr class="hr-normal">
+        <div class="navbar-expand-lg navbar-expand-md navbar-expand-sm bottom-nav" style="padding-top: 10px;">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 fc-copyright__text">
-                        <h4>Payment Method</h4>
-                        <ul class="list-inline">
-                            @for ($i = 1; $i <= 3; $i++)
-                                <li>
-                                    <img src="/img/pm-{{$i}}.png" class="img-responsive css-class" alt="alt text"  style="width: 60px;">
-                                </li>
-                            @endfor
-                        </ul>
+                <div class="row" style="margin-left: 10px;">
+                    <div class="footer-first" style="margin-top: 10px;">
+                        <div class="linkHeader">
+                            Demion
+                        </div>
+                        <a href="" class="footer-link" style="text-decoration: none;">About</a>
+                        <a href="" class="footer-link" style="text-decoration: none;">Stories</a>
+                        <div class="sm-wrapper">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
                     </div>
-                    <div class="col-sm-6 fc-copyright__text">
-                        <h4></h4>
+
+                    <div class="footer-second" style="margin-top: 10px;">
+                        <div class="linkHeader">
+                            Course
+                        </div>
+                        <nav class="list-course">
+                            <div class="column-course">
+                                <a href="" class="footer-link" style="text-decoration: none;">Saham</a>
+                                <a href="" class="footer-link" style="text-decoration: none;">TOEFL</a>
+                                <a href="" class="footer-link" style="text-decoration: none;">Web Programming</a>
+                                <a href="" class="footer-link" style="text-decoration: none;">Android</a>
+                                <a href="" class="footer-link" style="text-decoration: none;">Competitive Programming</a>
+                            </div>
+                            <div class="column-course" style="margin-left: 30px;">
+                                <a href="" class="footer-link" style="text-decoration: none;">HTML & CSS</a>
+                                <a href="" class="footer-link" style="text-decoration: none;">Java</a>
+                                <a href="" class="footer-link" style="text-decoration: none;">Ruby</a>
+                                <a href="" class="footer-link" style="text-decoration: none;">Laravel</a>
+                            </div>
+                        </nav> 
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="list-inline u-mt--10">
-                            <li>
-                                <span>Demion is website that is engaged in education. We're committed to building the best learning experience inside and out. Formal education is outdated. So our platform will be the best place for you.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="list-inline u-mt--10">
-                            <li>
-                                <span>© 2018. All Rights Reserved. Made with</span>
-                            </li>
-                            <li>
-                                <i class="fa fa-heart icon-heart"></i> 
-                            </li>          
-                            <li>
-                                by Demion
-                            </li>
-                        </ul>
+
+                    <div class="footer-third" style="margin-top: 10px;">
+                        <div class="linkHeader">
+                            Resources
+                        </div>
+                        <a href="" class="footer-link" style="text-decoration: none;">Forum</a>
+                        <a href="" class="footer-link" style="text-decoration: none;">Help</a>
+                        <a href="" class="footer-link" style="text-decoration: none;">Blog</a>
                     </div>
                 </div>
             </div>
-        </div>  
-
+        </div>
+        <hr class="hr-normal">
+        <div class="navbar-expand-lg navbar-expand-md navbar-expand-sm bottom-nav">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav navbar-nav navbar-left"> 
+                        <a class="nav-item" href="/course" title="Demion">
+                            <img class="img-responsive" href="/course" src="https://image.ibb.co/f9Xmby/logo.png" alt="Demion" style="width:80px;height:50px;">
+                        </a>
+                        <div>   
+                            <span class="copyright" style="font-size: 13px;">© 2018. All Rights Reserved. Made with</span>
+                            <span class="fa fa-heart icon-heart copyright"> </span>
+                            <span class="copyright" style="font-size: 13px;"> by Demion</span>
+                        </div>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto push-left">
+                        <a class="copyright" href="/login" style="font-size: 13px; text-decoration: none; margin-right: 5px; margin-left: 5px;">Term of Use</a>
+                        <a class="copyright" href="/login" style="font-size: 13px; text-decoration: none; margin-right: 5px; margin-left: 5px;">Privacy Policy</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-primary">
     </div>
     <!-- Scripts -->
     <script src="js/app.js/"></script>
