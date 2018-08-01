@@ -16,9 +16,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.css') }}">
 
     <!-- Styles -->
-    <link href="/css/master.css" rel="stylesheet">
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/master.css" rel="stylesheet">
 </head>
 
 <body>
