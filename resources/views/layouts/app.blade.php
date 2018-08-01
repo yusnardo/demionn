@@ -11,18 +11,10 @@
     <title>Demion - @yield('title')</title>
     <meta name="author" content="Yusnardo Tendio">
 
-    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous"> --}}
-
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.css') }}">
 
     <!-- Styles -->
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-grid.css" rel="stylesheet">
-    <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-reboot.css" rel="stylesheet">
-    <link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
     <link href="/css/master.css" rel="stylesheet">
 </head>
 
