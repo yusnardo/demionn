@@ -18,6 +18,9 @@
     <!-- Styles -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-reboot.css" rel="stylesheet">
     <link href="/css/master.css" rel="stylesheet">
 </head>
 
