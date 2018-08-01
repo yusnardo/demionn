@@ -41,10 +41,10 @@
                         <label for="password" class="col-md-12 control-label">Password</label>
 
                         <div class="col-md-10">
-                            <input id="password" type="password" class="form-control" name="password" required>
+                            <input id="password" type="password" class="form-control is-invalid" name="password" required>
 
                             @if ($errors->has('password'))
-                                <span class="help-block">
+                                <span class="invalid-feedback">
                                     <strong>{{ $errors->first('password') }}</strong>
                                 </span>
                             @endif
@@ -63,7 +63,7 @@
                             Register
                         </button>
                     </div>
-                    <div class="form-group col-md-10">
+                    <div class="form-group col-md-10" style="text-align: justify;">
                         <p style="font-size: 10px; margin-top: 15px;">By clicking "Sign up", you acknowledge that you have read our updated terms of service, privacy policy and cookie policy, and that your continued use of the website is subject to these policies.</p>
                     </div>
                 </form>

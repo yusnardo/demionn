@@ -12,13 +12,13 @@
                     </div>
                 @endif
 
-                <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
+                <form class="form-horizontal offset-md-2" method="POST" action="{{ route('password.email') }}">
                     {{ csrf_field() }}
 
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                        <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                        <label for="email" class="col-md-12 control-label">E-Mail Address</label>
 
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                             @if ($errors->has('email'))
@@ -28,13 +28,10 @@
                             @endif
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <div class="col-md-6 offset-md-4">
-                            <button type="submit" class="btn btn-primary" style="position: relative; float: right; margin-top: 15px;">
-                                Send Password Reset Link
-                            </button>
-                        </div>
+                    <div class="col-md-5" style="display: flex;"">
+                        <button type="submit" class="btn btn-primary col-md-12" style="margin-top: 15px; margin-bottom: 15px;">
+                            Send Password Reset Link
+                        </button>
                     </div>
                 </form>
             </div>
