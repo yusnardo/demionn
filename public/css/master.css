@@ -312,10 +312,10 @@ p {
     padding: 6px;
     font-size: 14px;
     width: 25px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-      border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
 }
 .fa:hover {
     opacity: 0.8;
@@ -354,4 +354,13 @@ p {
     flex-shrink: 0;
     flex-basis: auto;
     min-width: 10%;
+}
+.about-page{
+    background-color: #fff; 
+    padding: 50px 15px 30px 15px;
+    border-left: 4px solid #4c7ef3;
+    border-top: 4px solid #4c7ef3;
+    border-right: 4px solid #4c7ef3;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
 }

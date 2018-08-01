@@ -34,5 +34,6 @@ Route::get('/card-1', function () {
     return view('cards.card-1');
 });
 
+Route::get('/about', 'AboutController@index');
 
 
