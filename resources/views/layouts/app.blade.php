@@ -18,7 +18,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="/css/master.css" rel="stylesheet">
-    <link href="/css/bootstrap.min.css.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     {{-- <link href="/sass/app.scss" rel="stylesheet"> --}}
 </head>
 
