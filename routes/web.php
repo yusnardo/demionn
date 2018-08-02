@@ -1,4 +1,8 @@
 <?php
+Route::get('/', function()
+{
+    return User::all();
+});
 
 Route::get('/', 'HomeController@index')->name('home');
 
