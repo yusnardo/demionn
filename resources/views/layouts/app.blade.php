@@ -44,7 +44,7 @@
                         </ul>
                         <ul class="nav navbar-nav ml-auto push-left">
                             @if(Auth::Check())         
-                                <div class="dropdown mt-3">
+                                <div class="dropdown mt-2">
                                   <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ Auth::user()->email }}
                                   </a>
@@ -81,7 +81,7 @@
                         <div class="linkHeader">
                             Demion
                         </div>
-                        <a href="" class="footer-link" style="text-decoration: none;">About</a>
+                        <a href="/about" class="footer-link" style="text-decoration: none;">About</a>
                         <a href="" class="footer-link" style="text-decoration: none;">Stories</a>
                         <div class="sm-wrapper">
                             <a href="#" class="fa fa-facebook"></a>
