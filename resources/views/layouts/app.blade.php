@@ -13,14 +13,21 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.css') }}">
 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/master.css" rel="stylesheet">
+    <link href="/css/demion.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
-        <div class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm bg-red">
+        <div class="navbar navbar-expand-md bg-red">
+           {{--  <button class="navbar-icon-mobile" type="button" data-toggle="collapse" data-target="#navbarnav">
+                <i class="fa fa-bars" aria-hidden="false" style="font-size: 24px; width: 30px;"></i>
+            </button> --}}
             <div id="navbarnav" class="collapse navbar-collapse">
                 <div class="container">
                     <div class="row">
@@ -37,10 +44,6 @@
                                 </a>
                                 <a class="nav-link nav-item" href="/course">Course</a>       
                             @endif
-                            
-                            <!-- <li class="nav-item">
-                                <span class="nav-link">Blog</span>
-                            </li> -->
                         </ul>
                         <ul class="nav navbar-nav ml-auto push-left">
                             @if(Auth::Check())         
@@ -63,6 +66,11 @@
                 </div>       
             </div>
         </div>
+
+        {{-- <div class="">
+            <p>tes</p>
+        </div> --}}
+
         <div class="body-content">
             <div class="container">
                 @include('layouts.partials._alert')

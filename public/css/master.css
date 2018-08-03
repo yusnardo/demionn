@@ -377,3 +377,8 @@ p {
     font-size: 80%;
     color: #dc3545;   
 }
+.navbar-icon-mobile{
+    background-color: transparent;
+    border: 0px;
+}
+

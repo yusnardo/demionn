@@ -1,0 +1,60 @@
+/*KETERANGAN*/
+
+/*color*/
+// 1. c --> color
+// 2. l --> light
+// 3. d --> dark
+
+
+
+/*color*/
+
+.c{
+	// color: white;
+	&-white{
+		color: #FFFFFF;
+	}
+	// color: black;
+	&-black{
+		color: #313131;
+	}
+	// color: red;
+	&-red{
+		color: #E53219;
+		&-l{
+			color: #F08374;
+		}
+		&-d{
+			color: #B72814;
+		}
+	}
+
+	// color : green;
+	&-green{
+		color: #36B37E;
+		&-l{
+			color: #79D6AF;
+		}
+		&-d{
+			color: #2A8C62;
+		}
+	}
+
+	&-orange{
+		color: #FFB968;
+		&-l{
+			color: #FFE8CE;
+		}
+		&-d{
+			color: #FFA135;
+		}
+	}
+}
+
+// background-color
+
+.bc{
+	&-black{
+		color: #313131;
+	}
+}
