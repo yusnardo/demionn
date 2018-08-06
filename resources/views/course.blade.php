@@ -43,7 +43,6 @@
 <div class="body-head">
 	<div class="container">
 		<div class="row">
-
 			<div class="jumbotron">
 				<h1 class="display-4">
 					Course
@@ -61,20 +60,6 @@
 	</div>
 </div>
 	
-
-
-<div class="body-filter">
-	<div class="container">
-		<div class="row">
-			<div class="row u-mt--30 u-mb-30">
-				<div class="col-sm-12">
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
 <div class="body-body">
 	<div class="container">
 		<div class="row">
@@ -155,8 +140,7 @@
 								</big>
 							</div>
 						</div>
-					</div>
-					
+					</div>				
 				@endforeach
 			</div>
 		</div>

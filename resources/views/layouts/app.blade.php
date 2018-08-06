@@ -20,6 +20,10 @@
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/master.css" rel="stylesheet">
     <link href="/css/demion.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
 </head>
 
 <body>
@@ -90,11 +94,10 @@
                             Demion
                         </div>
                         <a href="/about" class="footer-link" style="text-decoration: none;">About</a>
-                        <a href="" class="footer-link" style="text-decoration: none;">Stories</a>
                         <div class="sm-wrapper">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="https://facebook.com/demionedu/" target="_blank" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-linkedin" target="_blank"></a>
+                            <a href="#" class="fa fa-instagram" target="_blank"></a>
                         </div>
                     </div>
 
@@ -124,7 +127,6 @@
                             Resources
                         </div>
                         <a href="" class="footer-link" style="text-decoration: none;">Forum</a>
-                        <a href="" class="footer-link" style="text-decoration: none;">Help</a>
                         <a href="" class="footer-link" style="text-decoration: none;">Blog</a>
                     </div>
                 </div>
@@ -145,8 +147,8 @@
                         </div>
                     </ul>
                     <ul class="nav navbar-nav ml-auto push-left">
-                        <a class="copyright" href="/login" style="font-size: 13px; text-decoration: none; margin-right: 5px; margin-left: 5px;">Term of Use</a>
-                        <a class="copyright" href="/login" style="font-size: 13px; text-decoration: none; margin-right: 5px; margin-left: 5px;">Privacy Policy</a>
+                        <a class="copyright" href="/tos" style="font-size: 13px; text-decoration: none; margin-right: 5px; margin-left: 5px;">Term of Use</a>
+                        <a class="copyright" href="/policy" style="font-size: 13px; text-decoration: none; margin-right: 5px; margin-left: 5px;">Privacy Policy</a>
                     </ul>
                 </div>
             </div>
@@ -155,6 +157,7 @@
     </div>
     <!-- Scripts -->
     <script src="../../js/app.js/"></script>
+    <script src="/js/master.js"></script>
     <script src="../../public/js/bootstrap.js/"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
